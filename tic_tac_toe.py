@@ -7,11 +7,10 @@ def board_display():
            f"|{board[21]}|{board[22]}|{board[23]}|\n"
            f"|{board[31]}|{board[32]}|{board[33]}|\n")
 
-
 def play():
     while True:
        try:
-           x, y = [int(x) for x in input("Type the position (x,y) of field to fill x for row , y for column:\n").split()]
+           x, y = [int(x) for x in input("Type the position (x,y) of field to fill x for row , y for column :\n").split()]
            if x > 0 and x < 4 and y > 0 and y < 4:
                picked_field = int(str(x) + str(y))
                if board[picked_field] == " ":
@@ -43,4 +42,4 @@ while True:
         print("Goodbye.")
         break
 # def pvp():
-#
+#bhbdf rdf  f
