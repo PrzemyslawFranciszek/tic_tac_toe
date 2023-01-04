@@ -13,10 +13,16 @@ def play():
            x, y = [int(x) for x in input("Type the position (x,y) of field to fill x for row , y for column :\n").split()]
            if x > 0 and x < 4 and y > 0 and y < 4:
                picked_field = int(str(x) + str(y))
-               if board[picked_field] == " ":
-                   board[picked_field] = "X"
-                   board_display()
-                   break
+               if player1_choice.lower() == 'x':
+                   if board[picked_field] == " ":
+                       board[picked_field] = "X"
+                       board_display()
+                       break
+               else:
+                   if board[picked_field] == " ":
+                       board[picked_field] = "O"
+                       board_display()
+                       break
            print("Wrong choice. Type again")
            continue
        except (TypeError, ValueError):
