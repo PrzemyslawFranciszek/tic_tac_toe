@@ -18,11 +18,15 @@ def play():
                        board[picked_field] = "X"
                        board_display()
                        break
+                   else:
+                       print("you picked wrong field")
                else:
                    if board[picked_field] == " ":
                        board[picked_field] = "O"
                        board_display()
                        break
+                   else:
+                       print("you picked wrong field")
            print("Wrong choice. Type again")
            continue
        except (TypeError, ValueError):
